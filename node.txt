@@ -1,0 +1,39 @@
+installar :
+
+instalar las dependencias 
+npm install --save nodemoon body-parser express
+
+
+
+nodemoon = > monitorea los cambios en el servidor
+express => SERVIdor que se va utilizar (localmente)
+body parser => es requerido por express
+
+
+// para recuperar nuestras dependencias utilizar 
+npm install
+
+
+para correr nuestro servidor
+node y la ubicacion del archivo
+
+tmb npm run start
+
+// express
+
+req => request es lo que se esta pidiendo a la pagina
+res => es la respuesta del servidor
+el metodo .use responde a todos los verbos de http
+.get solo responde a get
+
+para cambiar el ambiente 
+npm start env -production
+
+utilizar base de datos
+npm install --save mysql2 sequelize
+
+
+//despues de crear la base de datos, debemos hacer los modelos
+
+//sql 
+insertar https://gist.githubusercontent.com/juanpablogdl/d2eb7e93c22cf1b2a9c646fa1d8f293a/raw/7cace81f5923dde01ecffdddfe692aaf39bd8e79/SQL

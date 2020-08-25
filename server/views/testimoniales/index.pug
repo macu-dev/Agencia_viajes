@@ -1,0 +1,22 @@
+extends ../layout/index.pug
+block titulo
+  main.container.mt-5
+    h1.text-center.mb-5 #{pagina}
+    .row
+      .col-md-12
+        .row.d-flex.justify-content-center
+          .col-md-8
+            form
+              .form-group
+                label(for="nombre") Nombre
+                input(id="nombre", class="form-control", type="text", placeholder="Tu nombre", name="nombre")
+            form
+              .form-group
+                label(for="correo") Correo Electronico
+                input(id="correo", class="form-control", type="email", placeholder="Tu correo electronico", name="correo")
+            
+            form
+              .form-group
+                label(for="mensaje") Mensaje
+                textarea#mensaje(name="mensaje", rows="3", placeholder="Tu mensaje", class="form-control")
+            input(type="submit", value="Agregar", class="btn btn-success btn-block")
